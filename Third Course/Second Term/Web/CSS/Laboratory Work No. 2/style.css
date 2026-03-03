@@ -1,0 +1,64 @@
+/* Убираем лишние отступы у всей страницы */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Шапка сайта */
+.header {
+    background-color: #FFC0CB; /* Розовый */
+    height: 120px;
+    display: flex;
+    align-items: center; /* Центровка текста по вертикали */
+    justify-content: center; /* Центровка текста по горизонтали */
+}
+
+/* Контейнер для среднего ряда */
+.main-container {
+    display: flex; /* Делает блоки внутри в ряд */
+    height: 400px; /* Высота среднего блока */
+}
+
+/* Сайдбары (оранжевые) */
+.sidebar-left, .sidebar-right {
+    background-color: #F28500;
+    width: 15%; /* Ширина боковых колонок */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Поворачиваем текст вертикально, как на макете */
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+/* Центральный блок (голубой) */
+.content {
+    background-color: #80DEEA;
+    flex-grow: 1; /* Занимает всё свободное место в центре */
+}
+
+/* Контейнер для подвала */
+.footer-container {
+    display: flex;
+    height: 100px;
+}
+
+/* Левая часть подвала */
+.footer-1 {
+    background-color: #E1D5E7; /* Светло-сиреневый */
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Правая часть подвала */
+.footer-2 {
+    background-color: #796E65; /* Коричнево-серый */
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

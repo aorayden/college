@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои увлечения и статистика</title>
+    <style>
+        /* Стили для красоты таблицы */
+        table { border-collapse: collapse; width: 400px; font-family: sans-serif; }
+        th { background-color: #008080; color: white; padding: 10px; }
+        /* Светло-голубой фон для центрального заголовка */
+        th.alt { background-color: #ADD8E6; color: white; }
+        td { padding: 8px; border-bottom: 1px solid #ddd; }
+        /* Желтоватый фон для четных строк, как на картинке */
+        tr:nth-child(even) { background-color: #FFFFE0; }
+        .text-right { text-align: right; }
+        .text-center { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <!-- Задание 1: Двухуровневый список -->
+    <h2>Мои увлечения</h2>
+    <ul>
+        <li>Программирование
+            <ul>
+                <li>Изучение Dart / Flutter</li>
+                <li>Участие в мероприятиях / чемпионатах</li>
+                <li>Разработка самых разных приложений</li>
+            </ul>
+        </li>
+        <li>Игры
+            <ul>
+                <li>Counter Strike 2</li>
+                <li>PUBG</li>
+                <li>R.E.P.O.</li>
+                <li>Majestic RP</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- Задание 2: Таблица по образцу -->
+    <h2>Статистика посещений</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Город</th>
+                <th class="alt">Посещений</th>
+                <th>%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>СПб</td>
+                <td class="text-center">199</td>
+                <td class="text-right">65.12</td>
+            </tr>
+            <tr>
+                <td>Москва</td>
+                <td class="text-center">69</td>
+                <td class="text-right">21.3</td>
+            </tr>
+            <tr>
+                <td>Киев</td>
+                <td class="text-center">5</td>
+                <td class="text-right">8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan="2" объединяет две первые ячейки в одну -->
+                <td colspan="2">Посещений за весь период</td>
+                <td class="text-right">273</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p><a href="../Laboratory work No. 2/works.html">Вернуться к списку работ</a></p>
+
+</body>
+</html>

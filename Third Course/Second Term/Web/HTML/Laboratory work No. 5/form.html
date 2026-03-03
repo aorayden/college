@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета студента</title>
+</head>
+<body>
+
+    <form action="../Laboratory work No. 2/works.html" method="get">
+        <p align="center">Заполните анкету</p>
+        
+        <!-- Используем таблицу для ровного выравнивания левой и правой части -->
+        <table align="center" cellpadding="5">
+            <!-- Текстовое поле -->
+            <tr>
+                <td>Имя:</td>
+                <td><input type="text" name="username" size="50" value="Евгений"></td>
+            </tr>
+
+            <!-- Радиокнопки (Пол) -->
+            <tr>
+                <td>Пол:</td>
+                <td>
+                    <!-- name должен быть одинаковым, чтобы выбрать можно было только один вариант -->
+                    <input type="radio" name="gender" id="male" checked> <label for="male">Мужской</label>
+                    <input type="radio" name="gender" id="female"> <label for="female">Женский</label>
+                </td>
+            </tr>
+
+            <!-- Выпадающий список -->
+            <tr>
+                <td>Образование:</td>
+                <td>
+                    <select name="education">
+                        <option>Среднее или ниже</option>
+                        <option>Высшее</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Чекбоксы -->
+            <tr>
+                <td>Какие языки программирования Вы знаете:</td>
+                <td>
+                    <input type="checkbox" name="lang" checked> PHP
+                    <input type="checkbox" name="lang" checked> C++
+                    <input type="checkbox" name="lang"> Java
+                </td>
+            </tr>
+
+            <tr>
+                <td>Дата рождения:</td>
+                <td><input type="date" name="birthday"></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Ваш комментарий:</td>
+                <td>
+                    <textarea name="comment" cols="50" rows="5">Спасибо, это тест</textarea>
+                </td>
+            </tr>
+
+            <!-- Кнопки -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Отправить">
+                    <!-- type="reset" очищает всю форму -->
+                    <input type="reset" value="Отмена">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
